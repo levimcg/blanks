@@ -8,6 +8,7 @@ destination: _build
 # Jekyll defaults
 exclude: [README.md, node_modules, Gruntfile.js, package.json, deploy-stage, deploy-prod]
 highlighter: pygments
+include: [.htaccess]
 permalink: :title
 sass:
     sass_dir: _sass
