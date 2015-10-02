@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Deploy your site using rsync
+# Make a copy of this file rename it to whatever you like. Then add it
+# to your .gitignore so that you aren't tracking your secret stuff.
+
+# Change the "deploy_user" variable to your ftp/ssh user name and account
+# Change "deploy_path" to the path you want to deploy your site to
+
+# Site variables
+deploy_user="user@yoursite.com"
+deploy_path="path/to/your/site"
+
+rsync -avze ssh --progress _build/ $deploy_user:$deploy_path
+
+exit 0

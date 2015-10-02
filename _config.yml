@@ -1,8 +1,14 @@
 title: Blanks
 description: A good starting point for building a Jekyll site
+
+# Makes for a cleaner file structure
+source: src/
+destination: _build
+
+# Jekyll defaults
+exclude: [README.md, node_modules, Gruntfile.js, package.json, deploy-stage, deploy-prod]
 highlighter: pygments
+permalink: :title
 sass:
     sass_dir: _sass
     style: expanded
-permalink: :title
-exclude: [README.md, Rakefile, node_modules, Gruntfile.js, package.json, deploy-stage, deploy-prod]
