@@ -5,10 +5,12 @@ description: A good starting point for building a Jekyll site
 source: src/
 destination: _build
 
-# Jekyll defaults
+# Exclude some common files and include things like .htaccess
 exclude: [README.md, node_modules, Gruntfile.js, package.json, deploy-stage, deploy-prod]
-highlighter: pygments
 include: [.htaccess]
+
+# Jekyll defaults
+highlighter: pygments
 permalink: :title
 sass:
     sass_dir: _sass
