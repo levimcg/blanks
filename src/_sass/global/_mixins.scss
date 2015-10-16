@@ -18,12 +18,12 @@
 
 // A subtle hover transition effect
 
-@mixin hover-trans($time-params){
-    -webkit-transition: all $time-params ease;
-       -moz-transition: all $time-params ease;
-        -ms-transition: all $time-params ease;
-         -o-transition: all $time-params ease;
-            transition: all $time-params ease;
+@mixin hover-trans($property-params, $time-params){
+    -webkit-transition: $property-params $time-params ease;
+       -moz-transition: $property-params $time-params ease;
+        -ms-transition: $property-params $time-params ease;
+         -o-transition: $property-params $time-params ease;
+            transition: $property-params $time-params ease;
 }
 
 @mixin clear-fix {
@@ -35,8 +35,24 @@
 }
 
 // Simple media query mixin. Just specify your breakpoint and added styles
-
 @mixin responsive($size) {
     @media screen and (min-width: $size) { @content; }
 }
 
+// ** Tint the color property. It's good for making subtle color changes.**
+//
+// Example:
+// @include tint-color(black, $color-text, 10%);
+
+@mixin tint-color($blackwhite, $color, $percent) {
+    color: mix($blackwhite, $color, $percent);
+}
+
+// ** Tint the background-color property. It's good for making subtle color changes.**
+//
+// Example:
+// @include tint-background(black, $color-text, 10%);
+
+@mixin tint-background($blackwhite, $color, $percent) {
+    background-color: mix($blackwhite, $color, $percent);
+}
