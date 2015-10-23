@@ -25,3 +25,13 @@ a {
 p {
     margin-bottom: 1.5em;
 }
+
+img {
+    // Responsive images with max-width
+    max-width: 100%;
+
+    // Fluid images, if you want them just uncommment
+    // width: 100%;
+
+    display: inline-block;
+}

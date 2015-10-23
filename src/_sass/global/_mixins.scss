@@ -1,4 +1,4 @@
-// Border radius
+// Border radius with vendor prefixes
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
        -moz-border-radius: $radius;
@@ -8,7 +8,6 @@
 }
 
 // Just specify the values for you box shadows
-
 @mixin box-shadow($shadow) {
     -webkit-box-shadow: $shadow;
        -moz-box-shadow: $shadow;
@@ -16,9 +15,8 @@
             box-shadow: $shadow;
 }
 
-// A subtle hover transition effect
-
-@mixin hover-trans($property-params, $time-params){
+// CSS transitions
+@mixin trans($property-params, $time-params){
     -webkit-transition: $property-params $time-params ease;
        -moz-transition: $property-params $time-params ease;
         -ms-transition: $property-params $time-params ease;
@@ -26,6 +24,7 @@
             transition: $property-params $time-params ease;
 }
 
+// A clear fix if you need it
 @mixin clear-fix {
     &:after {
         clear: both;
@@ -34,8 +33,17 @@
     }
 }
 
-// Simple media query mixin. Just specify your breakpoint and added styles
-@mixin responsive($size) {
+// Media query mixin. Specify your breakpoint ($size) then add selectors and styles
+//
+// Example:
+// @include media(800px) {
+//     div {
+//         float: left;
+//         background-color: red;
+//     }
+// }
+
+@mixin media($size) {
     @media screen and (min-width: $size) { @content; }
 }
 
