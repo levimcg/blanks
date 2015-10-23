@@ -10,7 +10,6 @@ exclude: [README.md, node_modules, Gruntfile.js, package.json, deploy-stage, dep
 include: [.htaccess]
 
 # Jekyll defaults
-highlighter: pygments
 permalink: :title
 sass:
     sass_dir: _sass
