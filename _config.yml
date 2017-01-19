@@ -1,10 +1,6 @@
 title: Blanks
 description: A good starting point for building a Jekyll site
 
-# Makes for a cleaner file structure
-source: src/
-destination: _build
-
 # Exclude some common files and include things like .htaccess
 exclude: [README.md, node_modules, Gruntfile.js, package.json, deploy-stage, deploy-prod]
 include: [.htaccess]
