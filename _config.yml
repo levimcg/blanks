@@ -2,7 +2,7 @@ title: Blanks
 description: A good starting point for building a Jekyll site
 
 # Exclude some common files and include things like .htaccess
-exclude: [README.md, node_modules, Gruntfile.js, package.json, deploy-stage, deploy-prod]
+exclude: [README.md, node_modules, Gruntfile.js, gulpfile.js, package.json, deploy-stage, deploy-prod]
 include: [.htaccess]
 
 # Jekyll defaults
