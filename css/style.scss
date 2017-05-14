@@ -1,17 +1,6 @@
 ---
 ---
 
-/*
-**	Global stuff
-**
-**	Headers, footers, and non-CSS producing stuff
-**	like Sass mixins and functions.
-**
-*/
-
-@import "global/settings";
-@import "global/mixins";
+@import "global/variables";
 @import "global/normalize";
 @import "global/base";
-@import "global/header";
-@import "global/footer";

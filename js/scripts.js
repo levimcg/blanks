@@ -1,1 +1,4 @@
-console.log("Butts");
+
+var myAlert = "Butts";
+
+console.log(myAlert);
